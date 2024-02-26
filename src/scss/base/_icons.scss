@@ -1,0 +1,19 @@
+[class*="icon-jadoo"]{
+  display: inline-block;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  mask-size: cover;
+  mask-repeat: no-repeat !important;
+  background-color: $black-main;
+}
+
+.icon-jadoo{
+  &-email{
+    mask: url('../images/email-icon.svg');
+    width: 26px;
+    height: 19px;
+    mask-size: 26px auto;
+  }
+}

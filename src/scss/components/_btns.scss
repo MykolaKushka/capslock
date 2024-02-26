@@ -1,0 +1,62 @@
+body.jadoo{
+  .btn{
+    font-weight: 500;
+    color: white;
+    font-size: 1.06rem;
+    line-height: 1.59rem;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 16px 25px;
+
+    &:hover, &:active{
+        opacity: .8;
+        color: white;
+    }
+
+    &-yellow{
+      box-shadow: 0px 20px 35px 0px #F1A50126;
+      text-decoration: none;
+      background-color: $yellow;
+    }
+
+    &-orange-gradient{
+      background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+      padding: 21px 47px;
+    }
+
+    &-play{
+      text-decoration: none;
+      display: inline-block;
+      color: $black-text;
+      font-size: 1.06rem;
+      position: relative;
+      padding: 16px 25px;
+      padding-left: 70px;
+
+      &:before{
+        content: '';
+        background-image: url('../images/triangle.svg');
+        background-repeat: no-repeat;
+        display: inline-block;
+        background-size: 15px;
+        position: absolute;
+        background-color: $orange;
+        background-position: center;
+        box-shadow: 0px 15px 30px 0px #DF69514D;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        left: 0;
+        top: 3px;
+      }
+
+      &:hover, &:active{
+        &:before{
+          opacity: .8;
+        }
+      }
+    }
+  }
+}

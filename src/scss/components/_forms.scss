@@ -1,0 +1,28 @@
+body.jadoo{
+  .form-control{
+    color: $black-main;
+    border: none;
+  }
+
+  .form-input-area{
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 17px 15px 17px 32px;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .form-control{
+      box-shadow: none;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  body.jadoo{
+    .form-input-area{
+      width: 420px;
+    }
+  }
+}

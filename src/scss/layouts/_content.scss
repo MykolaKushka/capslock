@@ -1,0 +1,78 @@
+body.jadoo .traveller-img{
+  margin-top: 22px;
+}
+
+.plane-img{
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  width: 100px;
+}
+
+.plane-img-2{
+  position: absolute;
+  right: -15px;
+  top: 150px;
+  z-index: 0;
+  width: 100px;
+}
+
+@media (min-width: 575px) {
+  .plane-img{
+    left: 50px;
+    top: 50px;
+  }
+
+  .plane-img-2{
+    top: 280px;
+  }
+}
+
+@media (min-width: 768px) {
+  .plane-img{
+    width: 127px;
+    left: 60px;
+    top: 60px;
+  }
+
+  .plane-img-2{
+    width: 127px;
+    top: 350px;
+  }
+}
+
+@media (min-width: 992px) {
+  body.jadoo .traveller-img{
+    max-width: 750px;
+  }
+
+  .plane-img{
+    left: 80px;
+    top: 80px;
+  }
+
+  .plane-img-2{
+    top: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.jadoo .traveller-img{
+    margin-right: -40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .plane-img{
+    left: 165px;
+    top: 104px;
+    width: 127px;
+  }
+
+  .plane-img-2{
+    right: -28px;
+    top: 150px;
+    z-index: 0;
+    width: 127px;
+  }
+}

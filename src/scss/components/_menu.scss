@@ -1,0 +1,133 @@
+.main-menu{
+  a{
+    color: $black-1;
+    line-height: 1.5;
+
+    &:hover, &:active{
+      color: $black-1-hover;
+    }
+  }
+}
+
+@media (min-width: 992px){
+  .main-menu {
+    .navbar-nav {
+      align-items: center;
+
+      .nav-link.btn{
+        border: 1px solid $black-1;
+        padding: 7px 18px;
+        color: $black-1;
+        border-radius: 5px;
+
+        &:hover, &:active{
+          border: 1px solid $black-1-hover;
+        }
+      }
+    }
+
+    .nav-item{
+      margin-left: 35px;
+
+      &.menu-lang{
+        margin-left: 35px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px){
+  .main-menu {
+    .nav-item{
+      margin-left: 48px;
+
+      &.menu-lang{
+        margin-left: 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px){
+  body.jadoo{
+    .navbar-nav .nav-link.btn{
+      display: block;
+      color: $black-1;
+      padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+      text-align: left;
+    }
+
+    .navbar{
+      position: static;
+    }
+
+    .navbar-toggler {
+      background-color: transparent;
+      cursor: pointer;
+      height: 35px;
+      padding: 10px;
+      position: relative;
+      width: 50px;
+      border: none;
+      box-shadow: none;
+
+      span {
+        background-color: $black-text;
+        display: inline-block;
+        height: 5px;
+        position: absolute;
+        right: 0;
+        transition: all .3s ease;
+        width: 35px;
+
+        &.top-line {
+          top: 7px;
+          width: 50px;
+        }
+
+        &.middle-line {
+          top: 17px;
+          width: 42px;
+        }
+
+        &.bottom-line {
+          top: 27px;
+        }
+      }
+
+      &[aria-expanded="true"] {
+        span{
+          &.top-line {
+            top: 15px;
+            transform: rotate(-45deg);
+          }
+          &.middle-line {
+            opacity: 0;
+          }
+          &.bottom-line {
+            top: 15px;
+            transform: rotate(45deg);
+            width: 50px;
+          }
+        }
+      }
+    }
+
+     .navbar-collapse {
+      background-color: $yellow-light;
+      height: 100vh;
+      left: 0;
+      opacity: 0;
+      padding: 11px 18px 12px;
+      position: absolute;
+      top: 88px;
+      transition: all .3s ease 0s;
+      width: 100%;
+      z-index: 4;
+
+      &.show {
+        opacity: 1;
+      }
+    }
+  }
+}

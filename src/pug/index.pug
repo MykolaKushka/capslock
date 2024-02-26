@@ -1,0 +1,35 @@
+doctype html
+html(lang='en')
+  head
+    include ./common/meta-and-title
+
+    include ./common/links
+
+  body.jadoo
+    .container-fluid.main-container
+      include ./layouts/header
+
+      main.container
+        .row
+          .col-lg
+            .main-content-section
+              .text-uppercase.fw-bold.text-orange.fs-1_25.mb-4 Best Destinations around the world
+              h1.h1 
+                | Travel,
+                span.decorated_text  enjoy 
+                | and live a new and full life
+            p.fw-500.mt_35.me-xl_-75 Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.
+            .row.mt_38.me-xl_-75
+              .col-auto.pe-5.mb-4
+                a.btn.btn-yellow(href="#") Find out more
+              .col-auto
+                a.btn-play(href="#") Play Demo 
+          .col-lg-auto.position-relative.text-center.animated-section
+            img.traveller-img(src="./images/traveller.png" alt="")
+            img.plane-img.fade-up-image(src="./images/plane.png", alt="")
+            img.plane-img-2.fade-up-image.delay-2(src="./images/plane.png", alt="")
+
+      include ./layouts/newsletter
+    
+    script(src="./js/main.js?v=20240226" type="module")
+    script(src="./vendors/bootstrap/bootstrap.bundle.min.js")

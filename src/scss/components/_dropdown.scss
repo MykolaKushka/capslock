@@ -1,0 +1,10 @@
+.jadoo .dropdown-toggle::after {
+  background-image: url('../images/arrow.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  width: 12px;
+  height: 7px;
+  margin-left: .33em;
+  vertical-align: .18em;
+}
